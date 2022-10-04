@@ -39,10 +39,8 @@ app.listen(3000);
 
 ## Getting started
 
- - [Kick-Off-Koa](https://github.com/koajs/kick-off-koa) - An intro to Koa via a set of self-guided workshops.
- - [Workshop](https://github.com/koajs/workshop) - A workshop to learn the basics of Koa, Express' spiritual successor.
- - [Introduction Screencast](https://knowthen.com/episode-3-koajs-quickstart-guide/) - An introduction to installing and getting started with Koa
-
+ - [Kick-Off-Koa Workshop](https://github.com/koajs/kick-off-koa) - An intro to Koa via a set of self-guided workshops.
+ - [Documentation](./docs) - Go straight to the docs.
 
 ## Middleware
 
@@ -98,7 +96,7 @@ as the parameter name for the context object.
 app.use(async (ctx, next) => { await next(); });
 ```
 
-Koa provides a `Request` object as the `request` property of the `Context`.  
+Koa provides a `Request` object as the `request` property of the `Context`.
 Koa's `Request` object provides helpful methods for working with
 http requests which delegate to an [IncomingMessage](https://nodejs.org/api/http.html#http_class_http_incomingmessage)
 from the node `http` module.
@@ -114,10 +112,10 @@ app.use(async (ctx, next) => {
 });
 ```
 
-Koa provides a `Response` object as the `response` property of the `Context`.  
+Koa provides a `Response` object as the `response` property of the `Context`.
 Koa's `Response` object provides helpful methods for working with
 http responses which delegate to a [ServerResponse](https://nodejs.org/api/http.html#http_class_http_serverresponse)
-.  
+.
 
 Koa's pattern of delegating to Node's request and response objects rather than extending them
 provides a cleaner interface and reduces conflicts between different middleware and with Node
@@ -153,17 +151,15 @@ configuration of the context, request and response objects.
 Learn more about the application object in the [Application API Reference](docs/api/index.md).
 
 ## Documentation
+All official koa docs are maintained in the [docs/](docs/) directory of this repository. Links:
 
  - [Usage Guide](docs/guide.md)
  - [Error Handling](docs/error-handling.md)
  - [Koa for Express Users](docs/koa-vs-express.md)
  - [FAQ](docs/faq.md)
  - [API documentation](docs/api/index.md)
-
-## Troubleshooting
-
-Check the [Troubleshooting Guide](docs/troubleshooting.md) or [Debugging Koa](docs/guide.md#debugging-koa) in
-the general Koa guide.
+ - [Troubleshooting Guide](docs/troubleshooting.md)
+ - [Debugging Koa](docs/guide.md#debugging-koa)
 
 ## Running tests
 
